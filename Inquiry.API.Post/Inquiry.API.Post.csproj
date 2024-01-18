@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="DTO\ExternalAPI\Embeded\" />
+    <Folder Include="DTO\ExternalAPI\Response\" />
+    <Folder Include="DTO\ExternalAPI\Request\" />
+    <Folder Include="DTO\InternalAPI\Embeded\" />
+    <Folder Include="DTO\InternalAPI\Request\" />
+    <Folder Include="DTO\InternalAPI\Response\" />
+    <Folder Include="Extensions\Middlewares\" />
+    <Folder Include="Infrastructure\Configuration\" />
+    <Folder Include="Infrastructure\Entities\" />
+    <Folder Include="Infrastructure\Repository\" />
+  </ItemGroup>
+
+</Project>
