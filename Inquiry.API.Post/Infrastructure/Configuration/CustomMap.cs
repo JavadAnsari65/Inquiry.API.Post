@@ -8,8 +8,10 @@ namespace Inquiry.API.Post.Infrastructure.Configuration
     {
         public CustomMap()
         {
-            CreateMap<DTO.ExternalAPI.Response.AddressResponse, DTO.InternalAPI.Response.AddressResponse>().ReverseMap();
-            CreateMap<DTO.ExternalAPI.Embeded.Street, DTO.InternalAPI.Embeded.Street>().ReverseMap();
+            CreateMap<DTO.ExternalAPI.Response.AddressResponse, DTO.InternalAPI.Response.AddressResponse>()
+                .ForMember(dest => dest.StreetDetail, opt => opt.MapFrom(src => src.StreetDetail))
+                .ReverseMap();
+            CreateMap<DTO.ExternalAPI.Embeded.StreetEmbeded, DTO.InternalAPI.Embeded.StreetEmbeded>().ReverseMap();
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿namespace Inquiry.API.Post.DTO.InternalAPI.Embeded
 {
-    public class Street
+    public class StreetEmbeded
     {
-        public string Stret { get; set; }
+        public string Street { get; set; }
         public string Valley { get; set; }
         public string PostalCode { get; set; }
         public string Pelak { get; set; }
